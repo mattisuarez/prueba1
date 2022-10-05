@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+    padding: 0 ;
+    margin: 0;
+    font-family: 'Peralta', cursive;
+
+}
+
+header{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: orange;
+    padding: 0.5rem;
+    border: 5px solid #000;
+    align-items: center;
+    margin-bottom: 0.5rem;
+
+}
+
+.imagen_nombre{
+    display: flex;
+    align-items: center;
+}
+
+.img_empresa{
+    width: 70px;
+    margin-right: 20px;
+}
+
+.nav{
+    text-decoration: none;
+    color: #000;
+    padding: 10px;
+    font-weight: bold;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background:url(https://miro.medium.com/max/1000/1*BIJ5kkEkHkzraLDBSQD5_w.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-attachment: fixed;
+    padding: 20px;
+    width: 100%;
+    
+} 
+
+
+.titulo{
+    color:orange;
+    text-align: center;
+}
+
+
+#formulario{
+    border: 5px solid blue;
+    width:  100%;
+    display: flex;
+    flex-direction: column;
+    color: orange;
+    background-color: rgba(91, 73, 73,0.7);
+}
+
+.boton{
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: orange;
+    border-width: 12px 12px 12px 12px black;
+    border-radius: 15px;
+
+}
+
+#form_foto{
+    display: flex;
+}
+
+#fotobody{
+    display: flex;
+    width: 50%;
+    margin-left: 1rem;
+    border-radius: 60rem;   
+}
+
+
+footer{
+    background-color: orange;
+    text-align: center;
+    border: 5px solid #000;
+    margin-top: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    header{
+        flex-direction: column;
+    }
+    .imagen_nombre{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    #form_foto{
+        flex-direction: column-reverse;
+    }
+    #fotobody{
+        padding-bottom: 1rem;
+        width: 100%;
+        margin-left: 0;
+    }
+}
